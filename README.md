@@ -6,4 +6,4 @@ This is example code and files for Creative Coding, taught at NYU's graduate IDM
 
 [Week 2 Quickstart Example](https://andrewcotter.io/creative-coding-fall22/week02/p5-start)
 
-[Week 2 Quickstart Example](https://andrewcotter.io/creative-coding-fall22/week03/p5-start)
+[Week 3 Quickstart Example](https://andrewcotter.io/creative-coding-fall22/week03/p5-start)
