@@ -13,6 +13,7 @@ function setup() {
 
 function draw() {
   background(100)
+
   for (let i = 0; i < ballArray.length; i++) {
     ballArray[i].move()
     ballArray[i].display()
