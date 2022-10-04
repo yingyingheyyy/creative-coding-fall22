@@ -1,19 +1,15 @@
-class Ball {
-  constructor(x, y, c) {
-    this.x = x
-    this.y = y
-    this.speedX = random(-1, 1)
-    this.speedY = random(-1, 1)
-    this.color = c//color(128, 64, 185)
+class Ball extends Shape {
+  constructor(pos, speed, color) {
+    super(pos,speed,color)
   }
 
   move() {
-    this.x += this.speedX
-    this.y += this.speedY
+    super.move()
   }
 
   display() {
-    fill(this.color)
-    ellipse(this.x, this.y, 100)
+    super.display()
+    ellipse(0, 0, 100)
+    pop()
   }
 }
