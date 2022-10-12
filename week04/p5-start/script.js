@@ -22,6 +22,7 @@ function draw() {
   shapeArray.forEach(function(shape) {
     shape.move()
     shape.display()
+    console.log(shape.pos.x)
   })
 }
 
