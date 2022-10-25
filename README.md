@@ -11,3 +11,8 @@ This is example code and files for Creative Coding, taught at NYU's graduate IDM
 [Week 4 Example](https://andrewcotter.io/creative-coding-fall22/week04/p5-start)
 
 [Week 5 Example](https://andrewcotter.io/creative-coding-fall22/week05/p5-start)
+
+[Week 6 Chroma Example](https://andrewcotter.io/creative-coding-fall22/week06/chroma-start)
+[Week 6 RiTa Example](https://andrewcotter.io/creative-coding-fall22/week06/rita-start)
+
+[Week 7 Example](https://andrewcotter.io/creative-coding-fall22/week07/oops-start)
