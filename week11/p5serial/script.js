@@ -88,8 +88,7 @@ function serialEvent() {
     buttonData = inString
   }
 
-
-  // inData = inString
+  inData = inString
 }
 
 const softCopy = (i) => i
