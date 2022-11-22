@@ -3,6 +3,10 @@ let serial;                             // variable to hold an instance of the s
 let inData;                             // for incoming serial data
 let portSelector;
 
+let dataMode;
+let buttonData;
+let potentiometerData;
+
 function setup() {
   createCanvas(600, 600);
   serial = new p5.SerialPort();       // make a new instance of the serialport library
@@ -23,6 +27,17 @@ function draw() {
   fill(255);
   // display the incoming serial data as a string:
   text("sensor value: " + inData, 30, 50);
+  text("pot data:" + potentiometerData, 30, 90)
+  text("buttonData: " + buttonData, 30, 150)
+
+  fill(potentiometerData, 128, 128)
+  if (buttonData === 0) {
+    ellipse(300, 300, potentiometerData * 2)
+  } else {
+    rectMode(CENTER)
+    rect(300, 300, potentiometerData * 2, potentiometerData * 2)
+  }
+  
 }
 
 // make a serial port selector object:
@@ -59,9 +74,25 @@ function portOpen() {
 
 function serialEvent() {
   // read a byte from the serial port, convert it to a number:
-  inString = serial.readLine();
-  inData = inString
+  let inString = serial.readLine();
+
+  if(inString.length <= 0) return;
+
+  if (inString === "potentiometer") {
+    dataMode = "potentiometer"
+  } else if(inString === "button") {
+    dataMode = "button"
+  } else if(dataMode === "potentiometer") {
+    potentiometerData = inString
+  } else if (dataMode === "button") {
+    buttonData = inString
+  }
+
+
+  // inData = inString
 }
+
+const softCopy = (i) => i
 
 function serialError(err) {
   console.log('Something went wrong with the serial port. ' + err);

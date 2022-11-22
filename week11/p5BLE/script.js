@@ -1,7 +1,7 @@
 
 // The serviceUuid must match the serviceUuid of the device you would like to connect
 // https://www.uuidgenerator.net/
-const serviceUuid = "";
+const serviceUuid = "put uuis here";
 let myBLE;
 let isConnected = false;
 

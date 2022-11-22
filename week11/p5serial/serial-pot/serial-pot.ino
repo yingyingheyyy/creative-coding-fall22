@@ -8,7 +8,16 @@ void loop() {
   // remap the pot value to fit in 1 byte:
   int mappedPot = map(potentiometer, 0, 1023, 0, 255); 
   // print it out the serial port:
+  Serial.println("potentiometer");
+//  delay(50);
   Serial.println(mappedPot);                             
   // slight delay to stabilize the ADC:
-  delay(100);                                            
+//  delay(50);               
+
+
+  int button = digitalRead(4);
+  Serial.println("button");
+//  delay(50);
+  Serial.println(button);
+//  delay(50);
 }

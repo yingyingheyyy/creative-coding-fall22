@@ -17,7 +17,7 @@
 const int ledPin = LED_BUILTIN; // set ledPin to on-board LED
 const int buttonPin = 4; // set buttonPin to digital pin 4
 
-BLEService ledService(""); // create service
+BLEService ledService("put uuid here"); // create service
 
 // create switch characteristic and allow remote device to read and write
 //BLEByteCharacteristic ledCharacteristic("19B10011-E8F2-537E-4F6C-D104768A1214", BLERead | BLEWrite);
