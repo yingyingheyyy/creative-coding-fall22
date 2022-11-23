@@ -31,7 +31,7 @@ function draw() {
   text("buttonData: " + buttonData, 30, 150)
 
   fill(potentiometerData, 128, 128)
-  if (buttonData === 0) {
+  if (buttonData == 0) {
     ellipse(300, 300, potentiometerData * 2)
   } else {
     rectMode(CENTER)
