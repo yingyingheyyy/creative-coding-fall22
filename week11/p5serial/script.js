@@ -1,5 +1,5 @@
 let serial;                             // variable to hold an instance of the serialport library
-// let portName = '/dev/cu.usbmodem1412301';  // fill in your serial port name here
+let portName = '/dev/tty.usbmodem1101';  // fill in your serial port name here
 let inData;                             // for incoming serial data
 let portSelector;
 
